@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+body{
+    display: grid;
+
+}
+header{
+    font-family: 'Montserrat', sans-serif;
+    color: blanchedalmond;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(
+36deg,#616c6e,#252b31,#9ec1d8);
+}
+.logo{
+    background: url("img/logo1.png") no-repeat;
+    background-color: blanchedalmond;
+    background-size: cover;
+    border-radius: 130px;
+    width: 130px;
+    height: 130px;
+    padding: auto;
+    margin-bottom: 13px;
+
+}
+.social{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between 10px;
+    
+    
+}
+.facebook{
+    background: url("img/facebook.png") no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.telegram{
+    background: url("img/telegram.png") no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.viber{
+    background: url("img/viber.png") no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+h5{
+    margin: 0px;
+}
+.mobile{
+    padding: 10px;
+    margin: 15px;
+    border-top: 1px solid rgb(238, 206, 170);
+    
+}
+.adress{
+    
+    margin: 20px;
+}
+
+   
+@media screen and (max-width: 479px) {
+    header{
+        font-family: 'Montserrat', sans-serif;
+        color: blanchedalmond;
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns:  40% 40% 20%;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(
+    36deg,#616c6e,#252b31,#9ec1d8);
+    }
+    
+    .logo{
+        background: url("img/logo.png") no-repeat;
+        background-color: blanchedalmond;
+        background-size: cover;
+        border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        padding: auto;
+    }
+    .social{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        
+    }
+    .facebook{
+        background: url("img/facebook.png") no-repeat;
+        background-size: cover;
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+        
+    }
+    .telegram{
+        background: url("img/telegram.png") no-repeat;
+        background-size: cover;
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+    }
+    .viber{
+        background: url("img/viber.png") no-repeat;
+        background-size: cover;
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+        
+    }
+    .mobile{
+        padding: 5px;
+        margin: 7px;
+        border-top: 1px solid rgb(238, 206, 170);
+        
+    }
+    .adress{
+        
+        margin: 10px;
+    }
+  }
