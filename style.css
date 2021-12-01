@@ -79,7 +79,13 @@ h5{
     align-items: center;
     margin: 30px;
     cursor: pointer;
+    font-size: 15px;
+    
 
+}
+.fade{animation-name: fade; animation-direction: 1,5s;}@keyframes{form{opacity: 0.1;}to{opacity: 1;}}
+.tabheader__item{
+    box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
 }
 .show{
     display: block;
@@ -88,14 +94,16 @@ h5{
     display: none;
 }
 
-.tabheader__item_active{
+/* .tabheader__item_active{
     color:#000;
     font-size:18px;
    
-}
+} */
 span:hover{
-    font-size: 15px;
+    font-size: 10px;
     color: sandybrown;
+    
+    
     
 /* background-color: peru; */
 
@@ -194,5 +202,8 @@ span:hover{
         justify-items: center;
         margin: 12px;
 
+    }
+    .tabheader__item{
+        box-shadow: none;
     }
   }

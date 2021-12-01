@@ -1,8 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
 
-
-
-
     const tabs = document.querySelectorAll('.tabheader__item'),
         tabsContent = document.querySelectorAll('.tabcontent'),
         tabsParent = document.querySelector('.tabheader__items'),
@@ -12,12 +9,13 @@ window.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
 
         tabsParent.classList.toggle('hamburger-menu-style');
+        
     });
 
     function hideTabsContent() {
         tabsContent.forEach(item => {
             item.classList.add('hide');
-            item.classList.remove('show');
+            item.classList.remove('show', 'fade');
         });
         tabs.forEach(item => {
             item.classList.remove('tabheader__item_active');
@@ -25,7 +23,7 @@ window.addEventListener('DOMContentLoaded', function () {
     };
 
     function showTabsContent(i = 0) {
-        tabsContent[i].classList.add('show');
+        tabsContent[i].classList.add('show', 'fade');
         tabsContent[i].classList.remove('hide');
         tabs[i].classList.add('tabheader__item_active');
     }
@@ -45,8 +43,5 @@ window.addEventListener('DOMContentLoaded', function () {
             })
         }
     })
-
-
-
 
 });
