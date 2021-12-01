@@ -69,7 +69,8 @@ h5{
     
     margin: 20px;
 }
-.wrapper-menu{
+.tabheader__items{
+    font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -80,8 +81,24 @@ h5{
     cursor: pointer;
 
 }
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.tabheader__item_active{
+    color:#000;
+    font-size:18px;
+   
+}
 span:hover{
-background-color: peru;
+    font-size: 15px;
+    color: sandybrown;
+    
+/* background-color: peru; */
+
 }
 .mob-menu{
     display: none;
@@ -102,7 +119,7 @@ background-color: peru;
         width: 100%;
         height: 150px;
         background: linear-gradient(
-    36deg,#616c6e,#252b31,#9ec1d8);
+    36deg,#616c6e,#adb4bb,#9ec1d8);
     }
     
     .logo{
@@ -153,9 +170,6 @@ background-color: peru;
         
         margin: 10px;
     }
-    .wrapper-menu{
-        display: none;
-    }
     .mob-menu{
         display: block;
         border: 2px solid black;
@@ -170,6 +184,9 @@ background-color: peru;
         position: absolute;
         right: 15px;
         top: 158px;
+    }
+    .tabheader__items{
+        display: none;
     }
     .hamburger-menu-style{
         display: grid;        
